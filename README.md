@@ -16,3 +16,11 @@ http://www.youtube.com/user/c9ide.
 
 Happy coding!
 The Cloud9 IDE team
+
+#Burntwood Family History Group Site Refresh
+
+Transcribed Home page paragraphs, set up template ready to begin displaying 
+hometemplate.ect with take data from content/home.coffee
+
+mainNavigation.coffee takes data from content/navlinks.coffee and displays list. output is commented out currently. 
+

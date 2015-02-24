@@ -16,9 +16,12 @@ ectRenderer = ECT
 app.set 'view engine', 'ect'
 app.engine 'ect', ectRenderer.render
 
+#testing
+content = require "./content/home"
+console.log content.Content.Home.p2
 
-navlinks = require "./navlinks"
-console.log navlinks["Categories"]["About"]
+
+navlinks = require "./content/navlinks"
 
 #routing
 app.get '/', (req,res)->
