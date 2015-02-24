@@ -16,16 +16,13 @@ ectRenderer = ECT
 app.set 'view engine', 'ect'
 app.engine 'ect', ectRenderer.render
 
-#testing
-content = require "./content/home"
-console.log content.Content.Home.p2
 
 
-navlinks = require "./content/navlinks"
 
+app.use express.static("images")
 #routing
 app.get '/', (req,res)->
-    res.render 'index', navlinks
+    res.render 'index'
 
 #listen for requests    
 app.listen(process.env.PORT);

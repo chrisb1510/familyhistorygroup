@@ -1,24 +1,24 @@
-<!--TODO THIS WILL RENDER NEW TEMPLATES -->
-
+<% @categories = require("../../../content/navlinks").Categories %>
+<% console.log @categories %>
 <% linkHelper = (link) -> %>
 	<li><a href="<%- link.href %>"><%- link.name %></a></li>
 <% end %>
 
 <% categoryHelper = (category) => %>
-	<li><p><%- category %></p></li>
-	
+	<li><a href="#"><%- category %></a></li>
+	    <ul>
+	    <% for sublink of @categories["#{category}"] : %>
+	         <li><a href="#"><%- sublink %></a></li>    
+	    <% end %>
+	    </ul>
 <% end %>
 <nav>
     <h1>Menu</h1>
     <ul>
-        <li><a href=""><p>Home</p></a></li>
-    	<% for category of @Categories : %>
+        <li><a href="#">Home</a></li>
+    	<% for category of @categories : %>
             <%- categoryHelper category %>
-      		<ul>
-	            <% for link in @Categories["#{category}"]['links'] : %>
-	                <p><%- link.name %> </p>
-	            <% end %>
-	        </ul>	
+      		
     	    <% end %>
     </ul>
 </nav>
