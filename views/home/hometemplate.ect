@@ -1,4 +1,10 @@
 <% @content = require('../../../content/home').Content.Home %>
+<% articleHelper = (paragraph) => %>
+    <p><%- @content["#{paragraph}"] %></p>
 
-<% console.log @content %>
+<% end %>
+<% for paragraph of @content : %>
+    <%- articleHelper paragraph %>
+<% end %>
+
     
