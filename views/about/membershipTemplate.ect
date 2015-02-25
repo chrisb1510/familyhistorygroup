@@ -1,0 +1,61 @@
+<% @content = require('../../../content/aboutContent').Content.Membership %>
+
+<% membershipHelper = (section) => %>
+    <h2><%- "#{section}" %></h2>
+    
+    <% switch section : %>
+      <% when 'Applications' : %>
+        <p><%- @content["#{section}"] %></p> 
+      <% end %>
+      
+      <% when 'Fees' : %>
+        <p><%- @content["#{section}"].info %></p>
+        <h3>Prices</h3>
+        <table>
+            <th>Type</th><th>Price</th>
+            
+            <% for type,cost of @content["#{section}"]["Prices"] : %>
+                 <tr>
+                     <td><%- type %></td><td><%- cost %></td>
+                 </tr>   
+            <% end %>
+        </table>
+      <% end %>
+      
+      <% when 'Journals' : %>
+        <% for subsection of @content["#{section}"] : %>
+        
+            
+            <% switch subsection :%>
+                <% when 'info' : %>
+                    <p><%- @content["#{section}"]["#{subsection}"] %></p>
+                <% end %>
+                <% when 'Specials' : %>
+                    <h3><%- subsection %></h3>
+                    <% for issue of @content["#{section}"]["#{subsection}"] : %>
+                        <h4><%- issue %></h4>
+                        <p><%- @content["#{section}"]["#{subsection}"]["#{issue}"] %></p>
+                    <% end %>
+                
+                <% end %>
+                <% else : %>
+                    <h3><%- subsection %></h3>
+                    <p><%- @content["#{section}"]["#{subsection}"] %></p>
+                <% end %>
+            
+                
+            <% end %>
+        <% end %>
+      
+      <% end %>
+    <% end %>
+<% end %>
+
+<article id="Membership">
+    <h1>Membership</h1>
+    <% for section of @content : %>
+        <%- membershipHelper section %>
+    <% end %>
+        
+    
+</article>

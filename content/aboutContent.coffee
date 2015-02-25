@@ -33,4 +33,21 @@ module.exports = Content:
                                   Commenting on the award, Pam WOODBURN said: We are delighted to have received the support of the Heritage Lottery Fund. 
                                   It will enable us to exhibit our work throughout the area and reach other soldiers’ families as yet uncontacted.
                                   If you want to get involved or you want more information, contact Pam WOODBURN (01543 684208)'
-
+                                  
+    'Membership':
+        'Applications':'Please print out and complete the Membership Application Form and post it to - Mrs. Pauline Bowe,The Honorary Secretary,Burntwood Family History Group,8 Larkspur Avenue,Burntwood,Staffordshire,WS7 4SS'
+    
+        'Fees':
+            'info':'Full Year Membership is from 1st January each year and fees must be paid on or before 31st December,while fees are reduced by 50% from the 1st July.Fees are payable in sterling and cheques are to be made payable to \"Burntwood Family History Group\"'
+            'Prices':
+                'Single Membership': '£8.00'
+                'Family Membership': '£12.00'
+      
+        'Journals': 
+            'info':'A journal is produced quarterly and is free to all Members.Postal Members receive theirs post free and it is available to non members for £1.00. Since April 2005,an extract from each Journal has been available to view on our web site' 
+        
+            'Specials':
+                '2006':'2006 was our 20th anniversary and a 50 page \'Special Edition\' Journal was produced (July 2006)'
+                '2011':'2011 was our 25th anniversary and the Burntwood Memorial Project was initiated.The project aims to research the lives of fallen Burntwood servicemen who lost their lives during the First World War.If you would like a copy of this Journal, it can be purchased at a cost of £1.50 including packaging and posting from the Honorary Secretary Pauline Bowen (01543 684635).'
+            
+            'Submissions':'We always welcome articles of interest or snippets of information relevant to our journal,please contact the Honorary Secretary, as above or submit them to us at enquiries@bfhg.org.uk if you have any information that would be of interest.'
