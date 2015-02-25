@@ -1,10 +1,20 @@
 <% @content = require('../../../content/home').Content.Home %>
+
 <% articleHelper = (paragraph) => %>
-    <p><%- @content["#{paragraph}"] %></p>
-
+    <article id="<%- paragraph %>">
+        <header>
+            <h1><%- paragraph %></h1>
+        </header>
+        <p><%- @content["#{paragraph}"] %></p>
+    </article>
 <% end %>
-<% for paragraph of @content : %>
-    <%- articleHelper paragraph %>
-<% end %>
 
+<section id="Home">
+    
+    <h2>Home</h2>
+
+    <% for paragraph of @content : %>
+        <%- articleHelper paragraph %>
+    <% end %>
+</section>
     
