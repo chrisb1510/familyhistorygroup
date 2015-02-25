@@ -1,0 +1,22 @@
+<% @content = require('../../../content/aboutContent').Content %>
+
+<% grantHelper = (grant) => %>
+    <h2><%- "#{grant}" %></h2>
+    <p><%- @content['Grants']["#{grant}"] %></p>
+    
+<% end %>
+<!--This About could probably be moved to its own file, maybe into index -->
+<section id="About">
+    <header>
+        <h1>About</h1>    
+    </header>
+    
+    <article id="Grants">
+        <h1>Grants</h1>
+        
+        <% for grant of @content['Grants'] : %>
+            <%- grantHelper grant %>
+        <% end %>
+        
+    </article>
+</section>    

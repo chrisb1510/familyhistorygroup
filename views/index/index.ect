@@ -1,16 +1,24 @@
-
+<!-- Index Layout -->
 <html lang="en">
 	<head>
+		<meta charset="utf-8" />
 		<title><%- @title %></title>
 	</head>
 	<body>
+		<!-- Header -->
 		<% include 'index/mainHeader' %>
 		
 		
 		<!-- Main Navigation-->
 
 		<% include 'index/mainNavigation' %>
-		<% include 'home/hometemplate' %> 
+		
+		<!-- Home -->
+		<% include 'home/homeTemplate' %>
+		<!-- About -->
+		<% include 'about/grantTemplate' %>
+		
+		<!-- Footer -->
 		<% include 'index/mainFooter' %>
 	</body>
 </html>

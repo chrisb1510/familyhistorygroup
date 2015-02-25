@@ -1,4 +1,4 @@
-<% @content = require('../../../content/home').Content.Home %>
+<% @content = require('../../../content/homeContent').Content.Home %>
 
 <% articleHelper = (paragraph) => %>
     <article id="<%- paragraph %>">
@@ -10,9 +10,10 @@
 <% end %>
 
 <section id="Home">
+    <header>
+        <h1>Home</h1>
+    </header>
     
-    <h2>Home</h2>
-
     <% for paragraph of @content : %>
         <%- articleHelper paragraph %>
     <% end %>

@@ -1,4 +1,20 @@
 
+#Burntwood Family History Group Site Refresh for my Dad
+
+Transcribed Home page paragraphs. 
+hometemplate.ect with take data from content/homeTemplate.coffee
+Paragraphs are now displayed with sectioning and separate articles.
+Needs work on Grammar and sectioning.
+
+
+mainNavigation.coffee takes data from content/navlinks.coffee and displays list of links, currently not implemented as true links.
+
+About section 
+
+Footer shows logos and links to groups which support bfhg.
+
+Built with 
+
      ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
     '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
     |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
@@ -16,11 +32,3 @@ http://www.youtube.com/user/c9ide.
 
 Happy coding!
 The Cloud9 IDE team
-
-#Burntwood Family History Group Site Refresh
-
-Transcribed Home page paragraphs, set up template ready to begin displaying 
-hometemplate.ect with take data from content/home.coffee
-
-mainNavigation.coffee takes data from content/navlinks.coffee and displays list. output is commented out currently. 
-
