@@ -1,0 +1,30 @@
+<% @content = require('../../../content/journalContent').Content %>
+<% @sponsor = @content['Journals'].sponsor %>
+
+<article id="Journals">
+    <h1>Journals</h1>
+<aside id ="sponsor">
+    <h2>Sponsored By <%- @sponsor.name %></h2>
+    <p>Tel:<a href="tel:<%- @sponsor.Tel %>"><%- @sponsor.Tel %></a></p>
+    <p>Fax:<%- @sponsor.Fax %></p>
+    <a href="mailto:<%- @sponsor.Quotes %>"><%- @sponsor.Quotes %></a>
+    <a href="mailto:<%- @sponsor.Orders %>"><%- @sponsor.Orders %></a>
+    <img src="<%- @sponsor.image %>" alt="<%- @sponsor.name %>Logo" />
+</aside>
+    
+    <p><%- @content['Journals'].info %></p>
+    
+    <h2>Latest Journal</h2>
+    <p><%- @content['Journals'].latest.date %> features</p>
+    
+    <ul>
+        <% for item in @content['Journals'].latest.contents :%>
+            <li><%- item %></li>
+        <% end %>
+    </ul>
+    <h3>An Extract: <%- @content['Journals'].latest.extract.title %></h3>
+    <p> <%- @content['Journals'].latest.extract["text"] %></p>
+
+    
+</article>
+<% %>
