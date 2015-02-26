@@ -29,8 +29,8 @@ Journals
 Takes information from journalContent.coffee
 Sponsor is templated as an aside with image and working email and phone number
 
-got up to extract
-ToDo: start working through previous journals.
+Current Issue works
+Previous Journals show the cover, and text prom each page which I transcribed from images(yuck)
 
 
 Footer shows logos and links to groups which support bfhg.

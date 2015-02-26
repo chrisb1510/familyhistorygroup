@@ -14,17 +14,34 @@
     
     <p><%- @content['Journals'].info %></p>
     
-    <h2>Latest Journal</h2>
-    <p><%- @content['Journals'].latest.date %> features</p>
+    <section id="latestJournal">
+        <h2>Latest Journal</h2>
+        
+        <p><%- @content['Journals'].latest.date %> features</p>
+        <h3>Contents</h3>
+        <ul>
+            <% for item in @content['Journals'].latest.contents :%>
+                <li><%- item %></li>
+            <% end %>
+        </ul>
+        
+        <h3>An Extract: <%- @content['Journals'].latest.extract.title %></h3>
+            <p> <%- @content['Journals'].latest.extract["text"] %></p>
     
-    <ul>
-        <% for item in @content['Journals'].latest.contents :%>
-            <li><%- item %></li>
+    </section>
+<% @previous = @content.Journals.Previous %>
+<% console.log @previous %>
+    <section id="previousJournals">
+        <h1>Previous Journals</h1>
+        <% for journal of @previous : %>
+        
+            <h2><%- journal %> <%- @previous["#{journal}"]['date'] %></h2>
+            <img src="<%- @previous["#{journal}"]['cover']%>" alt="<%- @previous["#{journal}"]['date'] %> Cover"/>
+            <% for page of @previous["#{journal}"]['pages'] :%>
+                <h3><%- page %></h3>
+                <p><%- @previous["#{journal}"]['pages']["#{page}"]['text'] %></p>
+            <% end%>
         <% end %>
-    </ul>
-    <h3>An Extract: <%- @content['Journals'].latest.extract.title %></h3>
-    <p> <%- @content['Journals'].latest.extract["text"] %></p>
-
-    
+    </section>
 </article>
 <% %>
