@@ -7,19 +7,25 @@
 	<body>
 		<!-- Header -->
 		<% include 'index/mainHeader' %>
-		
+		<% include 'about/memberApplication' %>
 		
 		<!-- Main Navigation-->
 
 		<% include 'index/mainNavigation' %>
 		
 		<!-- Home -->
-		<% #include 'home/homeTemplate' %>
+		<% include 'home/homeTemplate' %>
 		<!-- About -->
+		<section id="About">
+		<header>
+        	<h1>About</h1>    
+    	</header>
 		
-		<% #include 'about/grantTemplate' %>
-		<% #include 'about/membershipTemplate' %>
-		<% include 'about/journalTemplate' %>
+			<% include 'about/grantTemplate' %>
+			<% include 'about/membershipTemplate' %>
+			<% include 'about/journalTemplate' %>
+		
+		</section> 
 		<!-- Footer -->
 		<% include 'index/mainFooter' %>
 	</body>

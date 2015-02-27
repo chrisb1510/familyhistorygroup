@@ -1,0 +1,112 @@
+
+<form id="memberApplicationForm">
+    <h1>Membership Application form</h1>
+    <div>
+    <fieldset name="personalDetails">
+        <legend>Personal Details:</legend>
+            <div>
+          <label for="firstname">First name:</label>
+          <input type="text" id="firstname" name="firstname" placeholder="First Name" required maxlength="20" />
+        </div> 
+            <div>
+          <label for="lastname">Last name:</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Last Name" required maxlength="20" />
+        </div> 
+            <div>
+          <label for="dateOfBirth">Date of Birth (Optional)</label>
+          <input type="date" id="dateOfBirth" name="dateOfBirth"  />
+        </div> 
+    </fieldset>
+    <fieldset name="contactDetails">
+        <legend>Contact Details:</legend>
+            <fieldset name="onlineContact">
+                <legend>Online:</legend>
+                    <div>
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.address" required maxlength="50" />
+                        <label for="twitter">Twitter (Optional)</label>
+                        <input type="text" id="twitter" name="twitter" placeholder="@yourTwitter" />
+                    </div>
+            </fieldset>
+        
+            <fieldset name="address">
+                <legend>Postal:</legend>
+                    <div>
+                        <div>
+                            <label for="houseNumber">House Number:</label>
+                            <input type="number" id="houseNumber" name="houseNumber"  required  />
+                        </div>
+                        <div>
+                            <label for="streetName">Street</label>
+                            <input type="text" id="streetName" name="streetName" placeholder="Street Name" required />
+                        </div>
+                        <div>
+                            <label for="townCity">Town/City</label>
+                            <input type="text" id="townCity" name="townCity" placeholder="Town/City" required />
+                        </div>
+                        <div>
+                            <label for="county">County:</label>
+                            <input type="text" id="county" name="county" placeholder="County" required />
+                        </div>
+                        <div>
+                            <label for="postcode">Postcode:</label>
+                            <input type="text" id="postcode" name="postcode" placeholder="AA1 02BC" required />
+                        </div>
+                    </div>
+            </fieldset>
+            
+            <fieldset name="phone">
+                <legend>Phone Contact:</legend>
+                    <div>
+                        <label for="homePhonenumber">Home Tel. Number</label>
+                        <input type="tel" id="homePhonenumber" name="homePhonenumber" placeholder="01234 567890" />
+            
+                        <label for="mobileNumber">Mobile Tel. Number</label>
+                        <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="07123 456789" />
+                    </div>
+            </fieldset>
+    </fieldset>
+    <fieldset name="interests">
+        <legend>Surname Interests:</legend>
+        <table style="table { empty-cells: show; }">
+            <tr><th>Surnames</th><th>Country</th><th>Area (City/Town/Village) </th><th colspan="3">Dates</th></tr>
+            <tr><th>        </th><th>       </th><th>                         </th><th>Year</th><th>From</th><th>To</th></tr>
+            <tr>
+                <%# surname %>
+                <td><input id="surname1" name ="surname1" type="text" placeholder="Surname" /></td>
+                <td><input id="country1" name ="country1" type="text" placeholder="Country" /></td>
+                <td><input id="area1" name ="area1" type="text" placeholder="City/Town/Village" /></td>
+                <td><input id="year1" name ="year1" type="number" placeholder="xxxx" /></td>
+                <td><input id="fromYear1" name ="fromYear1" type="number" placeholder="xxxx" /></td>
+                <td><input id="afterYear1" name ="afterYear1" type="number" placeholder="xxxx" /></td>
+            </tr>
+            <tr>
+                <%# surname 1 %>
+                <td><input id="surname2" name ="surname2" type="text" placeholder="Surname" /></td>
+                <td><input id="country2" name ="country2" type="text" placeholder="Country" /></td>
+                <td><input id="area2" name ="area2" type="text" placeholder="City/Town/Village" /></td>
+                <td><input id="year2" name ="year2" type="number" placeholder="xxxx" /></td>
+                <td><input id="fromYear2" name ="fromYear2" type="number" placeholder="xxxx" /></td>
+                <td><input id="afterYear2" name ="afterYear2" type="number" placeholder="xxxx" /></td>
+            </tr>
+            <tr>
+                <%# surname 1 %>
+                <td><input id="surname3" name ="surname3" type="text" placeholder="Surname" /></td>
+                <td><input id="country3" name ="country3" type="text" placeholder="Country" /></td>
+                <td><input id="area3" name ="area3" type="text" placeholder="City/Town/Village" /></td>
+                <td><input id="year3" name ="year3" type="number" placeholder="xxxx" /></td>
+                <td><input id="fromYear3" name ="fromYear3" type="number" placeholder="xxxx" /></td>
+                <td><input id="afterYear3" name ="afterYear3" type="number" placeholder="xxxx" /></td>
+            </tr>
+        </table>
+    </fieldset>
+    </div>
+    <div>
+        <label>
+        <input type="checkbox" name="newsletter" />
+        Sign up for our newsletter
+        </label>
+    </div> 
+ 
+    
+</form>

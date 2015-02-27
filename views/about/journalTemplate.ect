@@ -38,7 +38,7 @@
             <h2><%- journal %> <%- @previous["#{journal}"]['date'] %></h2>
             <img src="<%- @previous["#{journal}"]['cover']%>" alt="<%- @previous["#{journal}"]['date'] %> Cover"/>
             <% for page of @previous["#{journal}"]['pages'] :%>
-                <h3><%- page %></h3>
+                <h3>Page <%- page %></h3>
                 <p><%- @previous["#{journal}"]['pages']["#{page}"]['text'] %></p>
             <% end%>
         <% end %>

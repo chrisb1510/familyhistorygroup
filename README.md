@@ -22,6 +22,9 @@ membershipTemplate.ect shows relevant sections, needs a little more work, want t
 Membership Page is Transcribed.
 Lots of repetition and poor grammar again.
 
+Membership application form started, non-functional, but mostly finished.
+Need submit button and way to add more surnames if necessary..
+
 Grants section is transcribed.
 grantTemplate.ect takes information from grants section of aboutContent
 

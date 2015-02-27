@@ -5,18 +5,15 @@
     <p><%- @content['Grants']["#{grant}"] %></p>
     
 <% end %>
-<!--This About could probably be moved to its own file, maybe into index -->
-<section id="About">
+
+<article id="Grants">
     <header>
-        <h1>About</h1>    
-    </header>
-    
-    <article id="Grants">
         <h1>Grants</h1>
+    </header>
+
+    <% for grant of @content['Grants'] : %>
+        <%- grantHelper grant %>
+    <% end %>
         
-        <% for grant of @content['Grants'] : %>
-            <%- grantHelper grant %>
-        <% end %>
-        
-    </article>
-</section>    
+</article>
+   
