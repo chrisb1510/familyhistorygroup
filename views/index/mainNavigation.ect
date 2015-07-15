@@ -1,14 +1,14 @@
 <% @categories = require("../../../content/navlinks").Categories %>
 
 <% categoryHelper = (category) => %>
-	<li><a href="#" class="round green">
+	<li class="categorylink"><a href="#" >
 	    <p><%- category %></p>
 	    </a>
 	</li>
-	    <ul>
+	    <ul class="sublevel">
 	    <% for sublink of @categories["#{category}"] : %>
-	       <li>
-	           <a href="#" class="round red">
+	       <li class="sublink">
+	           <a href="#" >
 	             <p><%- sublink %></p>
 	           </a>
 	       </li>    
@@ -17,8 +17,8 @@
 <% end %>
 <nav>
     <h1>Menu</h1>
-    <ul>
-        <li><a href="#" class ="round yellow"><p>Home</p></a></li>
+    <ul class="toplevel">
+        <li><a href="#"><p>Home</p></a></li>
     	<% for category of @categories : %>
             <%- categoryHelper category %>
       		

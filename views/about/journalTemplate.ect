@@ -9,7 +9,7 @@
     <p>Fax:<%- @sponsor.Fax %></p>
     <a href="mailto:<%- @sponsor.Quotes %>"><%- @sponsor.Quotes %></a>
     <a href="mailto:<%- @sponsor.Orders %>"><%- @sponsor.Orders %></a>
-    <img src="<%- @sponsor.image %>" alt="<%- @sponsor.name %>Logo" />
+    <img src="images/<%- @sponsor.image %>" alt="<%- @sponsor.name %>Logo" />
 </aside>
     
     <p><%- @content['Journals'].info %></p>
@@ -36,7 +36,7 @@
         <% for journal of @previous : %>
         
             <h2><%- journal %> <%- @previous["#{journal}"]['date'] %></h2>
-            <img src="<%- @previous["#{journal}"]['cover']%>" alt="<%- @previous["#{journal}"]['date'] %> Cover"/>
+            <img src="images/<%- @previous["#{journal}"]['cover']%>" alt="<%- @previous["#{journal}"]['date'] %> Cover"/>
             <% for page of @previous["#{journal}"]['pages'] :%>
                 <h3>Page <%- page %></h3>
                 <p><%- @previous["#{journal}"]['pages']["#{page}"]['text'] %></p>

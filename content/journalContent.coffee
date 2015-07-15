@@ -409,5 +409,6 @@ module.exports = Content:
                                 WORTH REMEMBERING 
                                 The archive section at Birmingham Central Library now closes all day on a Wednesday. 
                                 The St. Catherine\'s Indexes at Birmingham Central Library now begin with 1837 instead of 1865 as previously. 
-                                There is also now a charge of £1 per hour and has to be booked in advance.'
+                                There is also now a charge of £1 per hour and has to be booked in 
+                                advance. '
         

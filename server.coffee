@@ -9,8 +9,11 @@ morgan = require "morgan"
 app.use morgan('tiny')
 
 
-app.use(lessMiddleware(__dirname + '/less'));
-app.use(express.static(__dirname + '/less'));
+app.use lessMiddleware __dirname + '/less',
+            debug:true
+            dest:'public'
+
+#app.use(express.static(__dirname + '/less'))
 
 
 
@@ -27,7 +30,7 @@ app.set 'view engine', 'ect'
 app.engine 'ect', ectRenderer.render
 
 
-app.use express.static("images")
+app.use express.static("public")
 #routing
 app.get '/', (req,res)->
     res.render 'index'
